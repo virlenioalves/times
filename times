@@ -1,0 +1,25 @@
+programa
+{
+  time1, time2:caractere[30]:
+  gols_time1, gols_time2: inteiro;
+  funcao inicio()
+  { 
+    escreva("Digite o nome do time 1: ");
+    leia(time1);
+    escreva("Digite o numero de gols marcados pelo time 1: ");
+    leia(gols_time1);
+
+    
+    escreva("Diite o nome do time 2: ");
+    leia(time2);
+    escreva("Digite o numero de gols marcados pelo time 2: ");
+    leia(gols_time2);
+
+    se(gols_time1 > gols_time2) entao
+    escreva("O vencedor da partida e o time ", time1);
+    senao se(gols_time2 > gols_time1) entao
+    escreva("O vencedor da partida e o time ", time2);
+    senao
+    escreva("A partida terminou em empate.");
+  }
+}
